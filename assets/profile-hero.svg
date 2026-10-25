@@ -1,34 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title description">
-  <title id="title">Saurabh — Full Stack Developer</title>
-  <desc id="description">HCLTech, Noida. A dark navy and mint banner connecting interface, API, and data.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title description">
+  <title id="title">Saurabh — building across the stack</title>
+  <desc id="description">Full Stack Developer at HCLTech, Noida, India. Interface, API, and data panels separate into an illustrated three-dimensional stack. Reduced-motion preferences show a still composition.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#112b37"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#63e6be"/><stop offset="1" stop-color="#67d4f7"/></linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#93c5fd" stroke-opacity=".07"/></pattern>
+    <linearGradient id="ground" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#112b37"/></linearGradient>
+    <linearGradient id="mint" x2="1" y2="0"><stop stop-color="#63e6be"/><stop offset="1" stop-color="#67d4f7"/></linearGradient>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#193d47"/><stop offset="1" stop-color="#122d37"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#93c5fd" stroke-opacity=".055"/></pattern>
   </defs>
-  <rect width="1200" height="400" rx="24" fill="url(#background)"/>
-  <rect width="1200" height="400" rx="24" fill="url(#grid)"/>
-  <circle cx="1150" cy="45" r="190" fill="#2dd4bf" opacity=".055"/>
-  <circle cx="1000" cy="330" r="170" fill="#38bdf8" opacity=".04"/>
-  <rect x="54" y="54" width="6" height="28" rx="3" fill="#63e6be"/>
-  <text x="76" y="74" fill="#8ee6cf" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" letter-spacing="3">BUILDING ACROSS THE STACK</text>
-  <text x="54" y="167" fill="#f1f5f9" font-family="Segoe UI,Arial,sans-serif" font-size="72" font-weight="700" letter-spacing="-2">Saurabh.</text>
-  <text x="57" y="217" fill="url(#accent)" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="600">Full Stack Developer</text>
-  <text x="57" y="262" fill="#b8cad9" font-family="Segoe UI,Arial,sans-serif" font-size="20">HCLTech  /  Noida, India</text>
-  <text x="57" y="334" fill="#8aa4b7" font-family="Segoe UI,Arial,sans-serif" font-size="18">From interface to API to data.</text>
-  <g transform="translate(710 98)" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M96 104H160M258 104H316" stroke="#4ca89b" stroke-width="2" stroke-dasharray="5 7"/>
-    <rect x="0" y="50" width="110" height="108" rx="18" fill="#122d37" stroke="#2b535b"/>
-    <rect x="154" y="50" width="110" height="108" rx="18" fill="#153239" stroke="#367267"/>
-    <rect x="308" y="50" width="110" height="108" rx="18" fill="#122d37" stroke="#2b535b"/>
-    <g stroke="#8ee6cf" stroke-width="3">
-      <rect x="28" y="80" width="54" height="43" rx="5"/><path d="M28 92H82M38 86H40M45 86H47M40 102L35 108L40 114M69 102L74 108L69 114"/>
-      <path d="M196 85L184 104L196 123M222 85L234 104L222 123M215 85L204 123"/>
-      <ellipse cx="363" cy="86" rx="23" ry="9"/><path d="M340 86V119C340 131 386 131 386 119V86M340 102C340 114 386 114 386 102"/>
-    </g>
-    <g fill="#9ab3c3" stroke="none" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="600" letter-spacing="1.6" text-anchor="middle">
-      <text x="55" y="190">INTERFACE</text><text x="209" y="190">API</text><text x="363" y="190">DATA</text>
-    </g>
+  <style>
+    text { font-family: 'Segoe UI', Arial, sans-serif; }
+    .front { transform: translateY(-34px); animation: front 8s cubic-bezier(.22,1,.36,1) infinite; }
+    .back { transform: translateY(134px); animation: back 8s cubic-bezier(.22,1,.36,1) infinite; }
+    .guides { opacity: .55; animation: guides 8s ease-in-out infinite; }
+    .signal { opacity: .35; animation: signal 8s ease-in-out infinite; }
+    @keyframes front { 0%,100% { transform:translateY(42px); } 27.5%,82.5% { transform:translateY(-34px); } }
+    @keyframes back { 0%,100% { transform:translateY(58px); } 4% { transform:translateY(58px); } 27.5%,82.5% { transform:translateY(134px); } }
+    @keyframes guides { 0%,100% { opacity:0; } 27.5%,82.5% { opacity:.55; } }
+    @keyframes signal { 0%,20%,100% { opacity:.35; } 37%,65% { opacity:1; } 50%,82.5% { opacity:.5; } }
+    @media (prefers-reduced-motion: reduce) { .front,.back,.guides,.signal { animation:none; } }
+  </style>
+  <rect width="1200" height="460" rx="24" fill="url(#ground)"/>
+  <rect width="1200" height="460" rx="24" fill="url(#grid)"/>
+  <circle cx="1080" cy="110" r="230" fill="#63e6be" opacity=".035"/>
+  <path d="M685 0V460" stroke="#2b535b" stroke-opacity=".45"/>
+  <g fill="none" stroke="#2b535b" stroke-opacity=".5"><ellipse cx="925" cy="340" rx="195" ry="64"/><ellipse cx="925" cy="340" rx="150" ry="42"/></g>
+  <rect x="54" y="55" width="5" height="22" rx="2" fill="#63e6be"/>
+  <text x="73" y="71" fill="#8ee6cf" font-size="14" font-weight="600" letter-spacing="2.4">BUILDING ACROSS THE STACK</text>
+  <text x="50" y="181" fill="#f1f5f9" font-size="88" font-weight="700" letter-spacing="-4">Saurabh.</text>
+  <text x="56" y="231" fill="url(#mint)" font-size="31" font-weight="600" letter-spacing="-.5">Full Stack Developer</text>
+  <text x="57" y="275" fill="#b8cad9" font-size="19">HCLTech  /  Noida, India</text>
+  <text x="57" y="336" fill="#b8cad9" font-size="19">Useful interfaces. Dependable services.</text>
+  <g font-size="12" font-weight="600" letter-spacing="1.5" fill="#8ee6cf">
+    <rect x="56" y="365" width="111" height="31" rx="15" fill="#122d37" stroke="#2b535b"/><text x="76" y="385">INTERFACE</text>
+    <rect x="177" y="365" width="72" height="31" rx="15" fill="#122d37" stroke="#2b535b"/><text x="198" y="385">API</text>
+    <rect x="259" y="365" width="83" height="31" rx="15" fill="#122d37" stroke="#2b535b"/><text x="279" y="385">DATA</text>
   </g>
-  <rect x="54" y="376" width="1092" height="2" rx="1" fill="url(#accent)" opacity=".45"/>
+  <text x="741" y="50" fill="#8aa4b7" font-size="12" font-weight="600" letter-spacing="2">ONE EXPERIENCE. EVERY LAYER.</text>
+  <g transform="translate(746 151)">
+    <g class="guides" fill="none" stroke="#67d4f7" stroke-dasharray="3 7"><path d="M0-34V246M265-88V192M343 25V264"/></g>
+    <g class="back"><g transform="matrix(.98 -.20 .48 .68 0 0)">
+      <rect y="7" width="270" height="150" rx="14" fill="#0b1220"/>
+      <rect width="270" height="150" rx="14" fill="url(#surface)" stroke="#367267" stroke-width="1.5"/>
+      <text x="22" y="138" fill="#67d4f7" font-size="15" font-weight="700" letter-spacing="2">03 / DATA</text>
+      <g fill="none" stroke="#67d4f7" stroke-width="2"><ellipse cx="50" cy="75" rx="23" ry="8"/><path d="M27 75V111C27 122 73 122 73 111V75M27 93C27 104 73 104 73 93"/></g>
+      <g fill="#2b535b"><rect x="101" y="68" width="137" height="8" rx="4"/><rect x="101" y="88" width="104" height="8" rx="4"/><rect x="101" y="108" width="119" height="8" rx="4"/></g>
+      <circle class="signal" cx="235" cy="137" r="4" fill="#67d4f7"/>
+    </g></g>
+    <g transform="translate(0 50)"><g transform="matrix(.98 -.20 .48 .68 0 0)">
+      <rect y="7" width="270" height="150" rx="14" fill="#0b1220"/>
+      <rect width="270" height="150" rx="14" fill="#153239" stroke="#63e6be" stroke-width="1.5"/>
+      <text x="22" y="138" fill="#8ee6cf" font-size="15" font-weight="700" letter-spacing="2">02 / API</text>
+      <g fill="none" stroke="#63e6be" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M44 68L26 89L44 110M69 68L87 89L69 110M64 65L51 113"/></g>
+      <g fill="#367267"><rect x="114" y="68" width="121" height="8" rx="4"/><rect x="114" y="88" width="85" height="8" rx="4"/><rect x="114" y="108" width="105" height="8" rx="4"/></g>
+      <circle class="signal" cx="235" cy="137" r="4" fill="#63e6be"/>
+    </g></g>
+    <g class="front"><g transform="matrix(.98 -.20 .48 .68 0 0)">
+      <rect y="7" width="270" height="150" rx="14" fill="#367267"/>
+      <rect width="270" height="150" rx="14" fill="#f1f5f9" stroke="#b8cad9"/>
+      <path d="M0 44H270" stroke="#b8cad9"/>
+      <g fill="#0d9488"><circle cx="21" cy="22" r="4"/><circle cx="36" cy="22" r="4" opacity=".6"/><circle cx="51" cy="22" r="4" opacity=".3"/></g>
+      <text x="88" y="28" fill="#112b37" font-size="14" font-weight="700" letter-spacing="1.2">01 / INTERFACE</text>
+      <rect x="20" y="60" width="68" height="83" rx="6" fill="#b8cad9"/>
+      <rect x="103" y="60" width="146" height="33" rx="6" fill="#0d9488"/>
+      <rect x="103" y="105" width="67" height="38" rx="6" fill="#b8cad9"/>
+      <rect x="182" y="105" width="67" height="38" rx="6" fill="#67d4f7"/>
+      <g fill="#f1f5f9"><rect x="31" y="72" width="45" height="4" rx="2"/><rect x="31" y="86" width="34" height="4" rx="2"/><rect x="31" y="100" width="39" height="4" rx="2"/></g>
+      <path d="M118 77H232" stroke="#8ee6cf" stroke-width="5" stroke-linecap="round"/>
+    </g></g>
+  </g>
+  <text x="927" y="420" text-anchor="middle" fill="#b8cad9" font-size="15">From interface to API to data.</text>
+  <rect x="54" y="436" width="1092" height="2" rx="1" fill="url(#mint)" opacity=".4"/>
 </svg>
